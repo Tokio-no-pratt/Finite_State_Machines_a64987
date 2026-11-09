@@ -1,13 +1,15 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class GameEnvironment 
+public class GameEnvironment
 {
     private static GameEnvironment instance;
-    private List<GameObject> checkpoints  = new List<GameObject>();
-    public List<GameObject> Checkpoints { get { return Checkpoints; } }
+    private List<GameObject> checkpoints = new List<GameObject>();
+
+    public List<GameObject> Checkpoints { get { return checkpoints; } }
 
     public static GameEnvironment Singleton
     {
@@ -25,3 +27,4 @@ public class GameEnvironment
         }
     }
 }
+
